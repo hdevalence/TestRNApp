@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A26B9F2CB34BCA00C449A0 /* PraxMobileBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00A26B9E2CB34BC100C449A0 /* PraxMobileBridge.mm */; };
+		00A26BA22CB34C6500C449A0 /* prax_mobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A26BA12CB34C6500C449A0 /* prax_mobile.xcframework */; };
+		00A26BA32CB34C6500C449A0 /* prax_mobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A26BA12CB34C6500C449A0 /* prax_mobile.xcframework */; };
 		00E356F31AD99517003FC87E /* TestRNAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TestRNAppTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-TestRNApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-TestRNApp.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A26B9E2CB34BC100C449A0 /* PraxMobileBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PraxMobileBridge.mm; sourceTree = "<group>"; };
+		00A26BA02CB34BE500C449A0 /* PraxMobileBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PraxMobileBridge.h; sourceTree = "<group>"; };
+		00A26BA12CB34C6500C449A0 /* prax_mobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = prax_mobile.xcframework; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* TestRNAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestRNAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TestRNAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRNAppTests.m; sourceTree = "<group>"; };
@@ -45,7 +51,7 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-TestRNApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestRNApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TestRNApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-TestRNApp-TestRNAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRNApp-TestRNAppTests.release.xcconfig"; path = "Target Support Files/Pods-TestRNApp-TestRNAppTests/Pods-TestRNApp-TestRNAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		DBEE5165CD94C4EAE96BB8BA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = TestRNApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DBEE5165CD94C4EAE96BB8BA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = TestRNApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A26BA22CB34C6500C449A0 /* prax_mobile.xcframework in Frameworks */,
 				7699B88040F8A987B510C191 /* libPods-TestRNApp-TestRNAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A26BA32CB34C6500C449A0 /* prax_mobile.xcframework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-TestRNApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +97,8 @@
 		13B07FAE1A68108700A75B9A /* TestRNApp */ = {
 			isa = PBXGroup;
 			children = (
+				00A26BA02CB34BE500C449A0 /* PraxMobileBridge.h */,
+				00A26B9E2CB34BC100C449A0 /* PraxMobileBridge.mm */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -107,6 +117,7 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-TestRNApp.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-TestRNApp-TestRNAppTests.a */,
+				00A26BA12CB34C6500C449A0 /* prax_mobile.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -400,6 +411,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				00A26B9F2CB34BCA00C449A0 /* PraxMobileBridge.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,10 +602,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -666,10 +675,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

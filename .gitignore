@@ -1,4 +1,7 @@
 prax_mobile/target/
+prax_mobile/prax_mobile.xcframework/
+prax_mobile/simulator_fat/
+*.a
 
 # OSX
 #

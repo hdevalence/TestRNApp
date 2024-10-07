@@ -16,9 +16,11 @@ namespace prax_mobile {
 extern "C" {
 #endif // __cplusplus
 
-int32_t sum(int32_t a, int32_t b);
+bool start_server(void);
 
-void start_server(void);
+bool stop_server(void);
+
+int32_t sum(int32_t a, int32_t b);
 
 #ifdef __cplusplus
 } // extern "C"

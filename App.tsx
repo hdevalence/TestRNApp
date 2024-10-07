@@ -17,6 +17,7 @@ import {
   View,
 } from 'react-native';
 import ExampleComponent from './ExampleComponent';
+import ServerExampleComponent from './ServerExampleComponent';
 
 import {
   Colors,
@@ -75,6 +76,9 @@ function App(): React.JSX.Element {
         <Header />
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
           <ExampleComponent />
+        </View>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+          <ServerExampleComponent />
         </View>
         <View
           style={{

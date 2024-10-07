@@ -36,3 +36,11 @@ $(XCFRAMEWORK): $(ARCHS_IOS)
 	lipo -create target/x86_64-apple-ios/release/$(LIB) target/aarch64-apple-ios-sim/release/$(LIB) -output simulator_fat/$(LIB)
 	xcodebuild -create-xcframework -library target/aarch64-apple-ios/release/$(LIB) -headers generated/include -library simulator_fat/$(LIB) -headers generated/include -output $@
 	cp -r $@ ../ios/$@
+
+.PHONY: clean
+clean:
+	rm -rf simulator_fat
+	rm -rf $(XCFRAMEWORK)
+	rm -rf ../ios/$(XCFRAMEWORK)
+
+.PHONY: all ios android clean

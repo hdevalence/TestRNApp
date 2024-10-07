@@ -1,10 +1,14 @@
-use penumbra_proto::{
-    core::app::v1::{
-        query_service_client::QueryServiceClient as AppQueryServiceClient, AppParametersRequest,
-    },
-    custody::v1::custody_service_server::CustodyServiceServer,
-    view::v1::view_service_server::ViewServiceServer,
-};
+use anyhow::Result;
 use penumbra_view::{Storage, ViewServer};
 
 const ENDPOINT: &str = "https://testnet.plinfra.net";
+
+pub async fn start_test_view_server() -> Result<ViewServer> {
+    ViewServer::load_or_initialize(
+        None::<&str>,
+        None::<&str>,
+        &penumbra_keys::test_keys::FULL_VIEWING_KEY,
+        ENDPOINT.parse().unwrap(),
+    )
+    .await
+}

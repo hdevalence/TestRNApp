@@ -10,6 +10,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@buf/penumbra-zone_penumbra.connectrpc_es": "^1.5.0-20241002211910-430d52207ecc.1",
+    "@connectrpc/connect": "^1.5.0",
+    "@connectrpc/connect-web": "^1.5.0",
+    "@penumbra-zone/protobuf": "^6.1.0",
     "react": "18.3.1",
     "react-native": "0.75.4"
   },

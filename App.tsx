@@ -18,6 +18,7 @@ import {
 } from 'react-native';
 import ExampleComponent from './ExampleComponent';
 import ServerExampleComponent from './ServerExampleComponent';
+import PenumbraStatus from './PenumbraStatus';
 
 import {
   Colors,
@@ -79,6 +80,9 @@ function App(): React.JSX.Element {
         </View>
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
           <ServerExampleComponent />
+        </View>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+          <PenumbraStatus />
         </View>
         <View
           style={{

@@ -65,8 +65,10 @@ pub extern "C" fn stop_server() -> bool {
     if let Some(server) = RUNTIME.get() {
         let mut server_guard = server.lock().unwrap();
         if let Some(runtime) = server_guard.take() {
-            // Shutdown the runtime without waiting
-            runtime.shutdown_background();
+            println!("dropping runtime");
+            tracing::info!("dropping runtime");
+            std::mem::drop(runtime);
+            tracing::info!("finished dropping runtime");
             println!("Server stopped successfully");
             return true;
         }

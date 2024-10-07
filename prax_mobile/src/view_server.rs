@@ -12,3 +12,21 @@ pub async fn start_test_view_server() -> Result<ViewServer> {
     )
     .await
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    use tracing::Level;
+    use tracing_subscriber::fmt::Subscriber;
+
+    #[tokio::test]
+    async fn test_start_test_view_server() {
+        // Set up tracing subscriber with DEBUG level
+        Subscriber::builder().with_max_level(Level::DEBUG).init();
+
+        let _ = start_test_view_server().await.unwrap();
+
+        tokio::time::sleep(std::time::Duration::from_secs(5)).await;
+    }
+}

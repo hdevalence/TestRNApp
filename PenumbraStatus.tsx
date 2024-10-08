@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { penumbraClient } from './penumbraClient';
-// Import service definition that you want to connect to.
-import { StatusRequest } from '@penumbra-zone/protobuf/penumbra/view/v1/view_pb';
 
 const PenumbraStatus: React.FC = () => {
   const [status, setStatus] = useState<string>('');
@@ -10,9 +8,11 @@ const PenumbraStatus: React.FC = () => {
 
   const fetchStatus = async () => {
     try {
-      const request = new StatusRequest();
-      const response = await penumbraClient.status(request);
-      setStatus(JSON.stringify(response.toJson(), null, 2));
+      console.log("Got Here");
+      const response1 = await penumbraClient.status({});
+      console.log(response1);
+
+      setStatus(JSON.stringify(response1.toJson(), null, 2));
       setError('');
     } catch (err) {
       setError('Error fetching status: ' + (err instanceof Error ? err.message : String(err)));
